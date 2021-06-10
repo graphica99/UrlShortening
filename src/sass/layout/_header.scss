@@ -20,12 +20,12 @@
     }
     &__image{
         width: 60rem;
-        transform: translateX(12rem);
+        transform: translateX(20%);
         overflow-x: hidden;
     }
     &__search_container{
         margin-top: 2rem;
-        background-color: black;
+        background-color: var(--color-primary-2);
         padding: 3rem;
         border-radius: .4rem;
         background-image: url('../../images/bg-shorten-desktop.svg');
@@ -61,4 +61,25 @@
         border: none;
         border-radius: .3rem;
     }
+}
+
+//  transform: translateX(12rem);
+
+@keyframes slideLeft {
+  0%{
+      transform: translateX(40%);
+  }
+  50%{
+      transform: translateX(30%);
+  }
+  // 75%{
+  //     transform: translateX(20%);
+  // }
+  100%{
+      transform: translateX(20%);
+  }
+}
+
+.slideLeft{
+  animation: slideLeft .8s 1 linear;
 }

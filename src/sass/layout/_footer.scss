@@ -1,0 +1,33 @@
+footer{
+    width: 100%;
+    background-color: var(--very-dark-blue);
+
+}
+.footer__main{
+    width: 100%;
+    padding: 3rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(5rem,1fr));
+    // grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 20rem;
+    align-content: center;
+    justify-content: center;
+}
+.footer__logo{
+    background-color: white;
+}
+.footer__nav-items p{
+   color:white;
+   font-size: 1.7rem;
+}
+.footer__nav-item-container{
+    list-style-type: none;
+}
+.footer__nav-item{
+    color: var(--gray);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.footer__nav-social a{
+    padding-right: 2rem;
+}

@@ -17,7 +17,7 @@ export default function Header() {
             Get Started
           </a>
         </div>
-        <div className="header__image-container">
+        <div className="header__image-container slideLeft">
           <img src={HeaderImage} className="header__image" />
         </div>
       </div>

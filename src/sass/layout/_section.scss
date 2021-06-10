@@ -1,0 +1,14 @@
+.section-main{
+    padding: 3rem 8rem;
+    background-color: var(--color-primary-2);
+    background-image: url('../../images/bg-boost-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 16rem;
+    
+    & h2{
+        color: #fff;
+        font-size: 2.5rem;
+    } 
+}
