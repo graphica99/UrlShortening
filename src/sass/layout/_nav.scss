@@ -1,0 +1,47 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 7rem;
+    &__left{
+        flex-grow: 1;
+    }
+    &__right{
+    }
+    &__logo{
+        padding-right: 1rem ;
+    }
+    &__items{
+        list-style: none;
+    }
+    
+    &__item{
+        font-size: 1.5rem;
+        display: inline-block;
+        font-weight: 500;
+        padding: 0 2rem;
+        color: var(--grayish-violet);
+        cursor: pointer;
+        transition: all .2s;
+        &:hover{
+            color: var(--very-dark-blue);
+        }
+    }
+    &__login{
+        text-decoration: none;
+        color: var(--grayish-violet);
+        font-size: 1.5rem;
+        padding: 0 2.2rem;
+    }
+    // &__signup{
+    //     text-decoration: none;
+    //     font-size: 1.5rem;
+    //     background-color: var(--color-primary-1);
+    //     border-radius: 10rem;
+    //     color: #fff;
+    //     padding: 6px 18px;
+    //     font-weight: bold;
+    // }
+    
+}
+

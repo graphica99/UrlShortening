@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--font-display);
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+}
+
+section{
+    width: 100%;
+}
+
+.u-mb-small{
+  margin-bottom: 1.6rem;
+}
+.u-mb-medium{
+   margin-bottom: 3rem;
+}
+.u-mb-large{
+   margin-bottom: 5rem;
+}
+  
