@@ -1,6 +1,8 @@
 .header{
+    width: 100%;
+    padding: 3rem 8rem;
+    // z-index: 20;
     &__main{
-        padding: 3rem 7rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -20,5 +22,43 @@
         width: 60rem;
         transform: translateX(12rem);
         overflow-x: hidden;
+    }
+    &__search_container{
+        margin-top: 2rem;
+        background-color: black;
+        padding: 3rem;
+        border-radius: .4rem;
+        background-image: url('../../images/bg-shorten-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // transform: translateY(8rem);
+        // z-index: 100;
+    }
+    &__search{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+      
+    }
+    &__input{
+       input[type=text]{
+         outline: none;
+         font-size: 1.2rem;
+         outline: none;
+    }
+      padding: 1rem;
+      width: 90%;
+      margin-right: 1rem;
+    
+    } 
+    &__button{
+        font-size: 1.2rem;
+        background-color: var(--color-primary-1);
+        color: #fff;
+        padding: 1.2rem 1rem;
+        outline: none;
+        border: none;
+        border-radius: .3rem;
     }
 }

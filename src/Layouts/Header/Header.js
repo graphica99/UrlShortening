@@ -21,6 +21,16 @@ export default function Header() {
           <img src={HeaderImage} className="header__image" />
         </div>
       </div>
+      <div className="header__search_container">
+        <div className="header__search">
+          <input
+            type="text"
+            placeholder="Shorten a link here..."
+            className="header__input"
+          />
+          <button className="header__button"> Shorten It!</button>
+        </div>
+      </div>
     </section>
   );
 }

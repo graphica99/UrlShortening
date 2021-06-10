@@ -1,0 +1,65 @@
+.main{
+    padding: 3rem 8rem;
+    background-color:#eee;
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: '';
+        position: absolute;
+        height: 1rem;
+        top: 48rem;
+        left: 0;
+        width: 80%;
+        margin: 0 8rem;
+        background-color: var(--color-primary-1);
+
+    }
+    &__text{
+        text-align: center;
+        margin-top: 15rem;
+        &-h2{
+            font-size: 3.5rem;
+        }
+        &-p{
+            font-size: 1.8rem;
+        }
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(30rem,1fr));
+        grid-template-rows: 28rem;
+        grid-column-gap: 3rem;
+    }
+    &__card{
+        position: relative;
+        background-color: #fff;
+        height: 20rem;
+        padding: 4rem;
+        &-circle img{
+            position: absolute;
+            top: -3.1rem;
+            left: 1.8rem;
+            border-radius: 50%;
+            padding: 1.5rem;
+            width: 5rem;
+            height: 5rem;
+            // margin-bottom: 1rem;
+            background-color: var(--very-dark-violet);
+        }
+      &__text-h3{
+          font-size: 2rem;
+      }
+      &__text-p{
+        font-size: 1.3rem;
+    }
+    }
+    &__card-1{
+        align-self: start;
+    }
+    &__card-2{
+        align-self: center;
+    }
+    &__card-3{
+        align-self: end;
+    }
+}
