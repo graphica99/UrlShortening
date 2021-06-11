@@ -47,9 +47,9 @@
    .nav__checked{
     display: none;
    }
-//    .nav__handburger-icon{
-//     display: none;
-//    }
+   .nav__handburger-icon{
+    display: none;
+   }
 }
 @media only screen and (max-width: 600px) {
    .nav{
@@ -122,3 +122,25 @@
 //    }
 
 } 
+
+.sticky{
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    background-color:#fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    // transform: translateY(-100%);
+    // animation: topnav .8s 1 linear;
+}
+
+// @keyframes topnav {
+//     0%{
+//         transform: translateY(-50%);
+//     }
+//     50%{
+//         transform: translateY(-25%);
+//     }
+//     100%{
+//         transform: translateY(0);
+//     }
+//   }
