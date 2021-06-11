@@ -7,14 +7,13 @@ footer{
     width: 100%;
     padding: 3rem 8rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(5rem,1fr));
-    // grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 20rem;
+    grid-template-columns: repeat(auto-fit , minmax(10rem,1fr));
     align-content: center;
     justify-content: center;
 }
 .footer__logo{
     background-color: white;
+    margin-bottom: 3rem;
 }
 .footer__nav-items p{
    color:white;
@@ -29,5 +28,11 @@ footer{
     padding-bottom: 1rem;
 }
 .footer__nav-social a{
-    padding-right: 2rem;
+    padding-right: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+   .footer__main{
+      text-align: center;
+   }
 }

@@ -63,3 +63,57 @@
         align-self: end;
     }
 }
+
+@media only screen and (max-width: 600px) {
+  .main{
+      padding: 3rem;
+      text-align: center;
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(30rem,1fr));
+        grid-row-gap: 6rem;
+    }
+
+    &__card{
+        position: relative;
+        background-color: #fff;
+        height: 20rem;
+        padding: 4rem;
+        &-circle img{
+            position: absolute;
+            top: -3.1rem;
+            left: 11rem;
+            border-radius: 50%;
+            padding: 1.5rem;
+            width: 5rem;
+            height: 5rem;
+            // margin-bottom: 1rem;
+            background-color: var(--very-dark-violet);
+        }
+      &__text-h3{
+          font-size: 2rem;
+      }
+      &__text-p{
+        font-size: 1.3rem;
+    }
+    }
+
+    &__card-1{
+        align-self: end;
+    }
+    &__card-2{
+        align-self: start;
+    }
+    &__card-3{
+        align-self: start;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        height: 70rem;
+        top: 48rem;
+        left: 8rem;
+        width: 1rem;
+    }
+  }
+}
